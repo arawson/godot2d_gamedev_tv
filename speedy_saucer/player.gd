@@ -9,8 +9,8 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	var thrust_vec = Vector2(
-		Input.get_axis("move_left", "move_right"),
-		Input.get_axis("move_up", "move_down")
-	).normalized() * thrust
+	var thrust_vec = Input.get_vector(
+		"move_left", "move_right",
+		"move_up", "move_down"
+	) * thrust
 	apply_force(thrust_vec)
