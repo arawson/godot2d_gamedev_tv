@@ -1,10 +1,16 @@
 extends RigidBody2D
 
 
-# Called when the node enters the scene tree for the first time.
+@export var thrust: float = 80
+
+
 func _ready() -> void:
-	test()
+	pass
 
 
-func test():
-	print("This is a test of the emergency broadcast system." + " this is only a test")
+func _physics_process(delta: float) -> void:
+	var thrust_vec = Vector2(
+		Input.get_axis("move_left", "move_right"),
+		Input.get_axis("move_up", "move_down")
+	).normalized() * thrust
+	apply_force(thrust_vec)

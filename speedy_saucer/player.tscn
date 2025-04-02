@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnv653klu08td"]
 
 [ext_resource type="Texture2D" uid="uid://bivvxuhj1hh8o" path="res://ufoGreen.png" id="1_364mu"]
-[ext_resource type="Script" path="res://player.gd" id="1_kh0td"]
+[ext_resource type="Script" uid="uid://d30oq6o8jmx4j" path="res://player.gd" id="1_kh0td"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c0gpb"]
 radius = 46.0109
