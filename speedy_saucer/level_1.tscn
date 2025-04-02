@@ -16,3 +16,6 @@ stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_uotu5")]
 position = Vector2(371, 233)
+thrust = 400.0
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
